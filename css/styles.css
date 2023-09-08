@@ -13,9 +13,18 @@ ul {
     list-style-type: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
 
-
-
+img {
+    display: block;
+}
 
 .visually-hidden {
     position: absolute;
@@ -34,6 +43,22 @@ ul {
 
 
 /* Header */
+.head {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -42,6 +67,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .accent {
@@ -55,7 +81,11 @@ ul {
     text-decoration: none;
 }
 
-.nav {
+.nav-list {
+    gap: 40px;
+}
+
+.nav-links {
     color: #2E2F42;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -63,6 +93,9 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    padding: 24px 0;
+
 }
 
 .nav:hover,
@@ -80,7 +113,14 @@ ul {
     font-style: normal;
 }
 
-.address-link {
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-links {}
+
+.address-contact {
     color: #434455;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -101,7 +141,10 @@ ul {
  */
 .first-section {
     background: #2E2F42;
+    padding: 188px 0;
 }
+
+
 
 .hero-title {
     color: #FFF;
@@ -110,6 +153,7 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
 }
 
 .button {
@@ -125,9 +169,13 @@ ul {
     padding: 16px 32px;
     border-radius: 4%;
     display: block;
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 50px; */
+    min-width: 169px;
+    height: 56px;
+    border: none;
+
 
 }
 
@@ -153,27 +201,43 @@ ul {
     cursor: pointer;
 }
 
-.hero-section {
+/* Section 1 */
+.hero-sections {
+    padding: 120px 0;
+}
+
+.hero-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .hero-links {
     background: #FFFFFF;
+    margin-right: 24px;
+    width: calc((100% - 72px) / 4);
 }
 
 .text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 /* Section 2 */
 
 .team-section {
     background: #F4F4FD;
+    max-width: 1440px;
+    padding: 120px 0;
 }
 
 .team {
@@ -182,7 +246,8 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .titles {
@@ -193,19 +258,37 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .position {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .team-links {
     background-color: #FFFFFF;
-    padding: 32px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.worker {
+    padding: 32px 0;
 }
 
 /* Section 3 */
+.portfolio {
+    background: #F4F4FD;
+    max-width: 1440px;
+    padding: 120px 0;
+}
 
 .portfolio-title {
     color: #2E2F42;
@@ -213,7 +296,27 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-links {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 48px) / 3);
+}
+
+.projects {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 /* Section 4 */
@@ -243,6 +346,8 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 
 }
 
