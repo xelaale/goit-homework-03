@@ -26,18 +26,6 @@ img {
     display: block;
 }
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 
 
 
@@ -84,6 +72,7 @@ img {
 
 .nav-list {
     gap: 40px;
+    display: flex;
 }
 
 .nav-links {
@@ -94,7 +83,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: flex;
     padding: 24px 0;
 
 }
@@ -168,7 +156,7 @@ img {
     background: #4D5AE5;
     cursor: pointer;
     padding: 16px 32px;
-    border-radius: 4%;
+    border-radius: 4px;
     display: block;
     /* margin-right: auto;
     margin-left: auto;
@@ -203,8 +191,22 @@ img {
 }
 
 /* Section 1 */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .hero-sections {
     padding: 120px 0;
+
 }
 
 .hero-list {
@@ -224,7 +226,7 @@ img {
 .hero-links {
     background: #FFFFFF;
     margin-right: 24px;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4)
 }
 
 .text {
@@ -309,7 +311,6 @@ img {
 
 .portfolio-links {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 48px) / 3);
 }
