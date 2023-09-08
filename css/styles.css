@@ -226,12 +226,13 @@ img {
 .hero-links {
     background: #FFFFFF;
     margin-right: 24px;
-    flex-basis: calc((100% - 72px) / 4)
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 
 }
 
@@ -312,7 +313,7 @@ img {
 .portfolio-links {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 48px) / 3);
+    width: flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .projects {
