@@ -13,6 +13,27 @@ ul {
     list-style-type: none;
 }
 
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+
+
+/* Header */
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -76,6 +97,8 @@ ul {
     color: #404BBF;
 }
 
+/* Section1
+ */
 .first-section {
     background: #2E2F42;
 }
@@ -99,6 +122,13 @@ ul {
     letter-spacing: 0.04em;
     background: #4D5AE5;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+
 }
 
 .button:hover {
@@ -131,7 +161,7 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.hero-list {
+.hero-links {
     background: #FFFFFF;
 }
 
@@ -139,6 +169,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* Section 2 */
 
 .team-section {
     background: #F4F4FD;
@@ -150,11 +182,7 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-}
-
-.position {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    padding: 8px;
 }
 
 .titles {
@@ -167,9 +195,17 @@ ul {
     text-transform: capitalize;
 }
 
-.team-list {
-    background-color: #FFFFFF
+.position {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
+
+.team-links {
+    background-color: #FFFFFF;
+    padding: 32px;
+}
+
+/* Section 3 */
 
 .portfolio-title {
     color: #2E2F42;
@@ -177,16 +213,26 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding: 8px;
 }
 
+/* Section 4 */
+
+
+
+
+
+/* Footer */
 .footer-text {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 .footer {
     background: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-logo {
