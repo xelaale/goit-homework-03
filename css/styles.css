@@ -24,6 +24,8 @@ h5 {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -87,8 +89,8 @@ img {
 
 }
 
-.nav:hover,
-.nav:focus {
+.nav-links:hover,
+.nav-links:focus {
     color: #404BBF;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -107,8 +109,6 @@ img {
     gap: 40px;
 }
 
-.address-links {}
-
 .address-contact {
     color: #434455;
     font-family: Roboto, sans-serif;
@@ -118,22 +118,21 @@ img {
     text-decoration: none;
 }
 
-.address-link:hover {
+.address-contact:hover {
     color: #404BBF;
 }
 
-.address-link:focus {
+.address-contact:focus {
     color: #404BBF;
 }
 
-/* Section1
- */
+/* Section1 */
+
 .first-section {
     background: #2E2F42;
     padding: 188px 0;
+    display: block;
 }
-
-
 
 .hero-title {
     color: #FFF;
@@ -143,6 +142,8 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .button {
@@ -158,13 +159,11 @@ img {
     padding: 16px 32px;
     border-radius: 4px;
     display: block;
-    /* margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px; */
     min-width: 169px;
     height: 56px;
     border: none;
-
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -214,6 +213,13 @@ img {
     gap: 24px;
 }
 
+.hero-links {
+    background: #FFFFFF;
+    margin-right: 24px;
+    flex-basis: calc((100% - 72px) / 4);
+    text-align: -webkit-match-parent;
+}
+
 .advantages {
     color: #2E2F42;
     font-size: 20px;
@@ -221,12 +227,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-}
-
-.hero-links {
-    background: #FFFFFF;
-    margin-right: 24px;
-    flex-basis: calc((100% - 72px) / 4);
 }
 
 .text {
@@ -242,16 +242,6 @@ img {
     background: #F4F4FD;
     max-width: 1440px;
     padding: 120px 0;
-}
-
-.team {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .titles {
@@ -270,12 +260,6 @@ img {
     gap: 24px;
 }
 
-.position {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-
 .team-links {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
@@ -286,6 +270,26 @@ img {
 .worker {
     padding: 32px 0;
 }
+
+.team {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.position {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+
+
 
 /* Section 3 */
 .portfolio {
