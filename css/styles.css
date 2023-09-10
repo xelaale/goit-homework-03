@@ -139,19 +139,22 @@ img {
 .first-section {
     background: #2E2F42;
     padding: 188px 0;
-    display: block;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-title {
     color: #FFF;
     font-size: 56px;
     text-align: center;
-    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 48px auto;
+
 }
 
 .button {
@@ -170,31 +173,16 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 
 }
 
 .button:hover {
-    color: #FFF;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
     background: #404BBF;
-    cursor: pointer;
 }
 
 .button:focus {
-    color: #FFF;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
     background: #404BBF;
-    cursor: pointer;
 }
 
 /* Section 1 */
@@ -211,7 +199,9 @@ img {
     overflow: hidden;
 }
 
-.hero-sections {
+.hero-section,
+.team-section,
+.portfolio {
     padding: 120px 0;
 
 }
@@ -219,13 +209,11 @@ img {
 .hero-list {
     display: flex;
     gap: 24px;
+    padding: 0;
 }
 
 .hero-links {
-    background: #FFFFFF;
-    margin-right: 24px;
-    flex-basis: calc((100% - 72px) / 4);
-    text-align: -webkit-match-parent;
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages {
@@ -238,9 +226,11 @@ img {
 }
 
 .text {
+    margin-bottom: 8px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
+    color: #434455;
 
 }
 
@@ -248,8 +238,8 @@ img {
 
 .team-section {
     background: #F4F4FD;
-    max-width: 1440px;
-    padding: 120px 0;
+    text-align: center;
+
 }
 
 .titles {
