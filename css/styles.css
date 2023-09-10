@@ -216,7 +216,8 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
-.advantages {
+.advantages,
+.team {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
@@ -256,6 +257,8 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .team-links {
@@ -284,10 +287,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
 }
-
-
-
-
 
 /* Section 3 */
 .portfolio {
